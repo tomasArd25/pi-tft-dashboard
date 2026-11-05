@@ -1,0 +1,4 @@
+# Only needed if you are NOT using the apt packages from install.sh
+psutil
+pillow
+numpy

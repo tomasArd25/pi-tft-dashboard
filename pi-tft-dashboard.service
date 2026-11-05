@@ -1,0 +1,13 @@
+[Unit]
+Description=Pi TFT Dashboard
+After=multi-user.target
+
+[Service]
+User=root
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/pi-tft-dashboard/dashboard.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
